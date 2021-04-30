@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+main {
+    margin: auto;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+header {
+    background-color: #EC7357;
+    border-radius: 20px 20px 10px 10px;
+    margin: -11px;
+    padding: 1px;
+    text-align: center;
+    z-index: 2;
+    border: 1px solid;
+}
+
+section {
+    background-color:white; 
+    margin: -11px;
+    padding-left: 16px;
+    z-index: -1;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border: 1px solid;
+}
+section {
+    padding-bottom: 8px;
+}
+
+footer {
+    background-color: #FBFFB9;
+    margin: -11px;
+    padding: 4px;
+    border-radius: 0px 0px 20px 20px;
+    border: 1px solid;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    padding-left: 8px;
+}
+
+.profile-img {
+    width: 110px;
+    float: right;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 3px;
+}

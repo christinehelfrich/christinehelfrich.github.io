@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christine Helfrich">
+    <meta name="description" content="This site is a portal for assignments in CSS 210">
+    <title>Christine Helfrich Home Portal CSS 210</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<main class="card">
+<header>
+    <h1>
+        Christine Helfrich
+    </h1>
+</header>
+<section>
+    <img src="headshot.JPG" alt="headshot" class="profile-img">
+    <h2>Assignment Portal</h2>
+    <h3>Week 1</h3> <a href="https://www.byui.edu/online"><p>Assignment Link</p></a>
+    <h3>Week 2</h3> <a href="https://www.byui.edu/online"></a><p>Assignment Link</p></a>
+    <h3>Week 3</h3> <a href="https://www.byui.edu/online"></a><p>Assignment Link</p></a>
+
+<button type="button" onclick="myFunction()">Try it</button>
+</section>
+<footer>
+    <p>© <span id="copyright-year">2020</span> | Christine Helfrich | <a href="https://www.byui.edu/online">BYUI Online Learning </a> </p>
+    <p>Last modified: <span id="last-modified">04/23/2021 11:04:24</span> </p>
+    <script>
+
+        document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+        document.querySelector('#last-modified').innerText = new Date(document.lastModified);
+
+    </script>
+</footer>
+</main>
+
+</html>
