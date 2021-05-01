@@ -1,73 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Yeseva+One&display=swap');
+@media only screen and (min-width: 1028px) {
 
-header {
-    text-align: center;
-    background-color: #eee;
-    margin: 40px;
-    padding: 10px;
-    border-radius: 15px 15px 15px 15px;
+header, footer, nav, main {
+    max-width: 75rem; /* left alignment */
+    margin: auto;
 }
-
+ 
 main {
-    display: grid;
-    width: 100%;
-    grid-gap: 1em;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-areas:
-    "proximity whitespace repetition";
-    justify-content: center;
+    grid-template-columns: auto auto auto;
+}
+    
+.law1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+    
+.law2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
-.proximity {
-    background-color: #fae7bb;
-    grid-area: proximity;
-    padding: 10px;
-    margin: 20px;
-    position: relative;
-    border: 1px solid;
-    text-align: center;
-    border-radius: 15px 15px 15px 15px;
-}
-
-.whitespace {
-    background-color: #fae7bb;
-    grid-area: whitespace;
-    padding: 10px;
-    margin: 20px;
-    position: relative;
-    border: 1px solid;
-    text-align: center;
-    border-radius: 15px 15px 15px 15px;
-}
-
-.repetition {
-    background-color: #fae7bb;
-    grid-area: repetition;
-    padding: 10px;
-    margin: 20px;
-    position: relative;
-    border: 1px solid;
-    text-align: center;
-    border-radius: 15px 15px 15px 15px;
-}
-
-img {
-    width: 200px;
-}
-
-h1, h2 {
-    font-family: 'Yeseva One', cursive;
-}
-
-h3, p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+.law3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 footer {
-    background-color: #eee;
-    margin: 40px;
-    padding: 10px;
-    border-radius: 15px 15px 15px 15px;
-    text-align: center;
+    font-size: 16px;
+    padding: 0;
+    
 }
+
+footer p {
+    font-size: 16px;
+    padding: 1%;
+  
+}
+
+ } /* end of media query */
