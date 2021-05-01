@@ -11,13 +11,17 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
+<header>
+    <h1>Design Principals Document</h1>
+    <h3>Christine Helfrich</h3>
+</header>
 <body>
     <main>
 
     <div class="proximity">
-    <h1>Proximity</h1>
-    <h2>India Earl Photography</h2>
-    <a href="https://www.indiaearl.com/"><h2>Link</h2></a>
+    <h2>Proximity</h2>
+    <h3>India Earl Photography</h3>
+    <a href="https://www.indiaearl.com/"><h3>Link</h3></a>
     <img src="images/indiaearl.PNG" alt="principal-1-photo">
     <p>This design allows the eye travel in an organized, 
         non-chaotic manner. Related words are grouped together, 
@@ -27,9 +31,9 @@
     </div>
 
     <div class= "whitespace">
-    <h1>White Space and Clean Design</h1>
-    <h2>Rajni Alex Design</h2>
-    <a href="https://www.rajnialexdesign.com/"><h2>Link</h2></a>
+    <h2>White Space and Clean Design</h2>
+    <h3>Rajni Alex Design</h3>
+    <a href="https://www.rajnialexdesign.com/"><h3>Link</h3></a>
     <img src="images/rajini.PNG" alt="principal-1-photo">
     <p>This design is very effective because it clean, and has only 
         necassary elements. For an interior designer's site, the design is 
@@ -41,9 +45,9 @@
 </div>
 
 <div class="repetition">  
-    <h1>Repetition</h1>
-    <h2>Arbor Collective</h2>
-    <a href="https://www.arborcollective.com/"><h2>Link</h2></a>
+    <h2>Repetition</h2>
+    <h3>Arbor Collective</h3>
+    <a href="https://www.arborcollective.com/"><h3>Link</h3></a>
     <img src="images/arbor.PNG" alt="principal-1-photo">
     <p>The use of similar, but different blocks defining different sectors
         of the site's organization is very clean and appealing to the eye.
@@ -56,4 +60,14 @@
 </main>
     
 </body>
+    <footer>
+        <p>© <span id="copyright-year">2020</span> | Christine Helfrich | <a href="https://www.byui.edu/online">BYUI Online Learning </a> </p>
+        <p>Last modified: <span id="last-modified">04/23/2021 11:04:24</span> </p>
+        <script>
+    
+            document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+            document.querySelector('#last-modified').innerText = new Date(document.lastModified);
+    
+        </script>
+    </footer>
 </html>
