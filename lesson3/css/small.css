@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Racing+Sans+One&display=swap');
+
+
+
+main {
+    margin: auto;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #BBCDE5;
+    margin-top: 20px;
+}
+
+heading {
+    text-align: center;
+    background-color: #D34E24;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #D34E24;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+li {
+    padding: 4px;
+
+}
+
+a:link {
+    color: #BBCDE5;
+  }
+  
+  /* visited link */
+a:visited {
+    color: #fff;
+  }
+  
+  /* mouse over link */
+a:hover {
+    color: #33658A;
+  }
+  
+  /* selected link */
+a:active {
+    color: #fff;
+  }
+
+
+
+
+
+
+h1 {
+    font-family: 'Racing Sans One', cursive;
+    color: #33658A;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: 'Racing Sans One', cursive;
+    padding-left: 10px;
+    color: #33658A;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: 'Racing Sans One', cursive;
+    padding-left: 10px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 20px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.p1 {
+    font-size: 1.7em;
+}
+
+.persona {
+    width: 100px;
+}
+
+.D34E24 {
+    color: #D34E24;
+}
+
+.secondary {
+    color: #FFBA49;
+}
+
+.BBCDE5 {
+    color: #BBCDE5;
+}
+
+.dark {
+    color: #33658A;
+}
+
+.colors {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFBA49;
+    padding: 3px;
+    margin: 0;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+}
