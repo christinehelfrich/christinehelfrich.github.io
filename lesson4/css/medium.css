@@ -1,0 +1,64 @@
+/* [ON BIG SCREEN] */
+/* Wrapper */
+@media screen and (min-width: 768px){
+#hamnav {
+    width: 100%;
+    background: #000;
+  }
+  
+  /* Hide Hamburger */
+  #hamnav label, #hamburger { display: none; }
+  
+  /* Horizontal Menu Items */
+  #hamitems { display: flex; }
+  #hamitems a {
+    width: 20%; /* 100% / 5 tabs = 20% */
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover {
+    background: #D34E24;
+  }
+
+  .weather-forecast-table {
+    display: flex;
+    margin: 10px;
+    padding: 0;
+
+
+}
+
+.weather-forecast > div {
+
+    padding: 5px;
+}
+
+.templogo {
+    width: 40px;
+}
+
+.cell {
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 10px;
+    margin: 5px;
+    max-width: 18%;
+    overflow: hidden;
+    border: solid black;
+    display: block;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+
+}
