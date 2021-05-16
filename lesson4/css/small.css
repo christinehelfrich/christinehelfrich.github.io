@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Racing+Sans+One&display=swap');
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+header {
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-template-rows: 120px auto;
+    grid-template-areas: 
+    "logo heading1"
+    "logo heading2";
+    clear: both;
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+header h1 {
+    grid-area: heading1;
+    max-width: 50%; 
+}
+
+header h2 {
+    grid-area: heading2;
+    max-width: 50%;
+}
+
+
+.logo {
+    grid-area: logo;
+    width: 100px;
+}
+
+
+#hamnav label { 
+  display: inline-block; 
+  color: white;
+  background: #D34E24;
+  font-style: normal;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+}
+#hamnav {
+    background: #D34E24;
+}
+
+/* Break down menu items into vertical */
+#hamitems a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  background-color: #FFBA49;
+}
+
+/* Toggle Show/Hide Menu */
+#hamitems { display: none; }
+#hamnav input:checked ~ #hamitems { 
+    display: block;
+ }
+  
+  
+#hamburger {
+    display: none;
+}
+
+#hamitems a:hover {
+    background: #D34E24;
+    color: white;
+  }
+
+
+
+.weather-summary {
+    background-color: #eee;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border: line;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.weather-summary-img {
+    position: relative;
+    margin: 10px;
+}
+.weather-summary {
+    position: absolute;
+    float: center;
+
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "address" "phone"
+     "email"
+    ;
+}
+
+.article {
+    position: relative;
+}
+
+.floatimg {
+    max-width: 200px;
+    float: right;
+    position: relative;
+    margin: 10px;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+
+h1 {
+    font-family: 'Racing Sans One', cursive;
+    color: #33658A;
+    font-size: 1.9em;
+
+}
+
+
+h2 {
+    font-family: 'Racing Sans One', cursive;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #D34E24;
+    padding: 10px;
+}
+
+main {
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .forecast {
+        display: none;
+    }
+
+}
