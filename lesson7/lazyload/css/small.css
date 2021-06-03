@@ -1,0 +1,21 @@
+
+
+body {
+    margin: auto;
+    width: 1000px;
+}
+
+header {
+    background-color: slateblue;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
