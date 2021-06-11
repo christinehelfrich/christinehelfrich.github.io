@@ -1,0 +1,29 @@
+@media only screen and (min-width: 1028px){
+    
+    nav, main {max-width: 75rem; margin: auto; justify-content: center;}
+    header, footer {max-width: 75rem; margin: auto;}
+    main {width: 1000px; margin-top: 20px;}
+    
+      nav ul li {flex-basis: auto;}
+      nav ul {padding-left:2%;}
+      nav li {width: auto;}
+      nav a {padding: .5rem 1rem;}
+    
+
+    
+      div.news {column-count: 3;}
+
+      li:hover {
+        background: #D34E24;
+        color: white;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+      }
+    
+    
+    }

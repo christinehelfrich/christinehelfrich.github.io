@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px){
+
+    td {
+        padding: 5px;
+    }
+    
+    th {
+        padding: 10px;
+        background-color:  #628ca6;
+        color: white;
+    }
+    
+
+}
