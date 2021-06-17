@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,7 @@
         <header>
 
             <picture class="logo">
-                <source media="(max-width: 400px)" srcset="images/logo.png" alt="logo">
+                <source media="(max-width: 400px)" srcset="images/logo.png">
                 <source media="(max-width: 1000px)" srcset="images/logo.png">
                 <source media="(max-width: 1600px)" srcset="images/logo.png">
                 <img src="images/logo.png" alt="logo">
@@ -51,6 +52,7 @@
 
 
     <div class="form">
+        <form name="myForm" onsubmit="return validateForm()">
 
            <label for="name">Name (5 to 20 characters):</label>
         
@@ -59,19 +61,18 @@
 
            <label for="email">Email</label>
            <input type="email" id="email" name="email" required
-           minlength="4" maxlength="20" size="30" placeholder="john@gmail.com">
+           minlength="4" maxlength="80" size="30" placeholder="john@gmail.com">
 
            <label for="phone">Phone Number</label>
            <input type="tel" id="phone" name="phone" required
            minlength="6" maxlength="9" size="10"  placeholder="###-###-####">
 
            <label for="zip">Zip Code</label>
-           <input type="number" id="zip" name="zip" required
-           minlength="6" maxlength="9" size="10">
+           <input type="number" id="zip" name="zip" required>
 
            <label for="stormdate">Storm Date</label>
            <input type="date" id="stormdate" name="stormdate" required
-           minlength="6" maxlength="9" size="10">
+            size="10">
 
         <label for="storm-choice">Storm Type</label>
 <input list="storm-flavors" id="storm-choice" name="storm-choice" />
@@ -84,10 +85,12 @@
         <option value="Tornado">
 </datalist>
 
-<label class="flexly" for="rating">Storm Severity (1 to 10): 
-    <input type="range" id="rating" value="5" min="0" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-    <span id="ratingvalue">5</span>
-</label>
+<label class="flexly" for="myRange">Storm Severity (1 to 10): </label>
+<div class="slidecontainer">
+    <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+    <p id="demo"></p>
+  </div>
+
 
 <label for="region-choice">Storm Region</label>
 <input list="region-flavors" id="region-choice" name="region-choice" />
@@ -109,25 +112,25 @@
         <option value="Fish Haven">
 </datalist>
 
-<label for="time">Danger Level</label>
-<input type="radio" id="time2" name="time" value="8" checked> 
-<label for="time1" id="time2">Yes</label>
+<label for="yes">Danger Level</label>
+<input type="radio" id="yes" name="time" value="8" checked> 
+<label for="yes" id="yes2">Yes</label>
 
-    <input type="radio" id="time2" name="time" value="9"> 
-    <label for="time2" id="time2">Maybe</label>
+    <input type="radio" id="maybe" name="time" value="9"> 
+    <label for="maybe" id="maybe2">Maybe</label>
 
 
-    <input type="radio" id="time2" name="time" value="10">
-    <label for="time3" id="time2">No</label>
+    <input type="radio" id="no" name="time" value="10">
+    <label for="no" id="no2">No</label>
 
            <label for="comments">Additional Comments</label>
-           <input type="textarea" id="comments" name="comments"
+           <input type="text" id="comments" name="comments"
            minlength="1" maxlength="500" size="50">
 
            <a href="thanks.html">
-           <input type="submit" id="submit" name="submit" required size="40">
+           <input type="submit" id="submit" name="submit" size="40">
         </a>
-
+    </form>
     </div>
 
 
