@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christine Helfrich Weather Site</title>
+	
+	<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<header>
+ <h1>Party Wave Forecast</h1>
+        <h2>Find the best time for you to surf... anywhere</h2>
+    </header>
+    
+    
+
+    <nav class="clearfix">
+        <ul >
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Towns</a></li>
+            <li><a href="#">Report a Storm</a></li>
+            <li><a href="#">Gallery</a></li>    
+        </ul>
+    </nav>
+    
+    
+    <main>
+		<h1>Three Towns Responsive Layout</h1>
+		<div class="display_here"></div>
+	</main>
+    <footer>
+        &copy; 2020 &bull; Christine Helfrich &bull; 123-555-6789
+    </footer>
+	<script>
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+
+    const towns = jsonObject['towns'];
+    console.table(jsonObject); 
+    for (let i = 0; i < towns.length; i++ ) {
+
+      let card = document.createElement('div');
+
+      let info = document.createElement('section');
+      let photo = document.createElement('figure');
+
+      
+      let name = document.createElement('h2');
+      let motto = document.createElement('h3');
+      let year = document.createElement('p');
+      let pop = document.createElement('p');
+      let rain = document.createElement('p');
+      let image = document.createElement('img')
+
+      name.textContent = towns[i].name;
+      motto.textContent = towns[i].motto;
+      year.textContent = 'Year Founded: ' + towns[i].yearFounded;
+      pop.textContent = 'Population: ' + towns[i].currentPopulation;
+      rain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+      image.setAttribute('src', 'images/' +towns[i].photo);
+      image.setAttribute('width', '400');
+      image.setAttribute('height', '200');
+      
+
+      info.appendChild(name);
+      info.appendChild(motto);
+      info.appendChild(year);
+      info.appendChild(pop);
+      info.appendChild(rain);
+
+      card.appendChild(info);
+
+      photo.appendChild(image);
+      card.appendChild(photo);
+      
+
+      document.querySelector('div.display_here').appendChild(card);
+
+
+      
+    }
+
+
+  });
+    </script>
+</body>
+</html>
