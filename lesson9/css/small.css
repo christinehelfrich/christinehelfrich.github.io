@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Racing+Sans+One&display=swap');
+
+
+
+html {
+    background-color: #e2ecfa;
+}
+
+header {
+    padding: .5rem 2%;
+
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal; color: black;}
+
+
+nav {
+    background-color: #D34E24;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+nav ul li {
+    float: left;
+    width: 25%;
+    
+}
+nav ul li a {
+    display: block;
+    background-color: #D34E24;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    color: #33658A;
+    background-color: #FFBA49;
+    opacity: 0.3;
+}
+nav ul li.active a {
+    background-color: #FFBA49;
+    color: #33658A;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+h1 {
+    font-family: 'Racing Sans One', cursive;
+    color: #33658A;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: 'Racing Sans One', cursive;
+    padding-left: 10px;
+    color: #33658A;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-family: 'Racing Sans One', cursive;
+    padding-left: 10px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 20px;
+}
+
+
+
+/*-----------  town info here --------------*/
+
+.display_here {
+    background-color: white; 
+    padding: 1rem;
+
+}
+.display_here div {padding: 1rem;}
+.display_here section {border: 2px solid #33658A;}
+.display_here section {text-align: center; }
+.display_here div section {margin: 0; background-color: #d3e5fd;  width: 100%; margin: auto;}
+.display_here div section h2 {color: #D34E24;}
+.display_here div section h3 {margin: 0; color: #FFBA49; font-weight: normal;}
+.display_here div img  {margin: 0; width: 100%;}
+.display_here figure { margin: 0; width: 100%; }
+
+
+
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}

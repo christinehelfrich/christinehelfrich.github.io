@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px){
+
+
+
+    
+    /*----------- town sections  --------------*/
+    .display_here div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .display_here div:nth-child(even) figure {grid-column: 1; grid-row: 1;}
+    .display_here div:nth-child(even) section {grid-column: 2;}
+    
+
+    .display_here div section {height: 220px;}
+    .display_here div img {height: 220px;}
+
+
+        
+    } /* end of media query */

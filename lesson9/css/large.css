@@ -1,0 +1,18 @@
+@media only screen and (min-width: 64rem) {
+
+
+
+    main {
+        width: 64rem;
+        margin: 0 auto;
+    }
+
+        
+    /*----------- town section  --------------*/
+    .display_here {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+    .display_here div {display: block;}
+    .display_here div section {height: auto;}
+    
+
+        
+    } /* end of media query */
