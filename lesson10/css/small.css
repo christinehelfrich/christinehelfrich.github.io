@@ -1,0 +1,264 @@
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+header {
+    padding: .5rem 2%;
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 1fr;
+
+}
+header .logo {
+    width: 80px;
+    grid-column: 1;
+    grid-row: 1/4;
+}
+header h1 {margin: 0; grid-column: 2; align-self: end;}
+header h2 {margin: 0; font-weight: normal; grid-column: 2;}
+
+
+
+.logo {
+    grid-area: logo;
+    width: 100px;
+}
+
+
+#hamnav label { 
+  display: inline-block; 
+  color: white;
+  font-style: normal;
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+#hamnav {
+    background: #D34E24;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+/* Break down menu items into vertical */
+#hamitems a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+/* Toggle Show/Hide Menu */
+#hamitems { display: none; }
+#hamnav input:checked ~ #hamitems { 
+    display: block;
+ }
+  
+
+  
+#hamburger {
+    display: none;
+}
+
+.active {
+    background-color: #FFBA49;
+    opacity: 0.7;   
+}
+
+
+li:hover {
+    background: #FFBA49;
+    color: white;
+  }
+
+
+.weather-summary {
+    background-color: #f5ccbf;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.wsummary {
+    font-size: 17px;
+    font-family: 'Racing Sans One', cursive;
+    color:  #D34E24;
+}
+
+#temper {
+    font-size: 20px;
+    font-weight: 900;
+    color: #33658A;
+}
+
+#chill, #condition {
+    font-size: 15px;
+    font-weight: 900;
+    font-style: italic;
+    color: #33658A;
+}
+
+.button {
+    text-align: center;
+    width: 100%;
+    background: #FFBA49;
+    border-radius: 0px 20px 20px 20px;
+    padding: 2px;
+    margin: 20px;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.galleryheader {
+    text-align: center;
+}
+
+.gal:hover {box-shadow: 0 0 50px #333;}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.weather-summary-img {
+    position: relative;
+    margin: 10px;
+}
+.weather-summary {
+    position: absolute;
+    max-width: 20%;
+    font-size: 10px;
+
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "address" "phone"
+     "email"
+    ;
+}
+
+.article {
+    position: relative;
+}
+
+.floatimg {
+    max-width: 200px;
+    float: right;
+    position: relative;
+    margin: 10px;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    text-align: center;
+    color: black;
+    list-style: none;
+}
+
+
+
+
+h1 {
+    font-family: 'Racing Sans One', cursive;
+    color: #33658A;
+    font-size: 1.9em;
+
+}
+
+
+h2 {
+    font-family: 'Racing Sans One', cursive;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+p, h5 {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 20px;
+}
+
+div#message {
+    background-color: #33658A;
+    padding: 15px;
+    color: white;
+    border-radius: 0px 30px 30px 30px;
+}
+
+div.showme{display: block;}
+div.hideme{display: none;}
+
+footer {
+    background-color: #D34E24;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+section.forecast1 {display: none;}
+
+main {
+    margin: 10px;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+    padding-left: 5px;
+}
+
+input {
+    display: inline;
+}
+
+input,
+label {
+    margin: .4rem 0;
+
+}
+
+input, select {
+    padding: 5px;
+    display: inline;
+}
+
+select {
+    margin: -.4rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#submit {
+    display: block;
+}
+
+#time1, #time2, #time3 {
+    display: inline-block;
+}
+
+
+.form {
+    text-align: left;
+    margin: 0 auto;
+    width: 700px;
+    border: solid 1px #eee;
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .forecast {
+        display: none;
+    }
+
+}
