@@ -49,7 +49,7 @@
                 <p>Low: xx</p>
                 <p>Wind: xx</p>
             </div>
-            <img src="/images/replaceme.JPG" class="summaryimg" alt="hero-image">
+            <img src="images/replaceme.JPG" class="summaryimg" alt="hero-image">
         </div>
 
 
@@ -89,7 +89,7 @@
 
         <div class="article"></div>
         <h2>Article Title</h2>
-        <img src="/images/replaceme.JPG" class="floatimg" alt="floated-img">
+        <img src="images/replaceme.JPG" class="floatimg" alt="floated-img">
         <p>On this day in history the first (you find something cool in history and
             complete this paragraph. Ryiam velit odio ut et ac tristique, dictumst,
             odio. Velit a ac, integer sociis placerat rhoncus nec purus augue a
@@ -125,14 +125,19 @@
             </div>
         </section>
             <div class="map-img">
-                <img src="/images/replaceme.JPG" class="mapimg" alt="map">
+                <img src="images/replaceme.JPG" class="mapimg" alt="map">
             </div>
         
     </main>
     
     <footer>
-        © Christine Helfrich • 2021
+        <p>© Christine Helfrich • <span id="last-modified">2021</span></p>
     </footer>
 </body>
+    <script>
+        const mydate = new Date();
+document.getElementById("last-modified").textContent = mydate
+const todayDayNumber = mydate.getDay();
+    </script>
 
 </html>
