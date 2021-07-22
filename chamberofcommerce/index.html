@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Page">
+    <meta name="author" content="Christine Helfrich">
+    <title>Laie Chamber of Commerce</title>
+
+
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/wide.css" rel="stylesheet">
+
+
+</head>
+<body>
+    
+        <header>
+
+            <picture class="logo">
+                <source media="(max-width: 400px)" srcset="images/logo.jpg">
+                <source media="(max-width: 1000px)" srcset="images/logo.jpg">
+                <source media="(max-width: 1600px)" srcset="images/logo.jpg">
+                <img src="images/logo.jpg" alt="logo">
+            </picture>
+        
+            <h1>Laie Chamber of Commerce</h1>
+            <h2>Ua Mau ke Ea o ka ʻĀina i ka Pono</h2>
+       
+        </header>
+
+        
+        <nav id="hamnav">
+            <!-- [THE HAMBURGER] -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+           
+            <!-- [MENU ITEMS] -->
+            <ul id="hamitems">
+                <li  class="active"><a href="index.html">Home</a></li>
+                <li><a href="city.html">City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          
+    
+    <main>
+
+
+        <div class="city-weather">
+            
+            <div class="weather-box">
+                <h1 class="laie-header">Welina mai e Laie!</h1>
+                <h5>Today's Weather: </h5>
+                <p><span id="condition">xx</span></p>
+                <p>Temperature: <span id="temp">xx</span></p>
+                <p>Humidity: <span id="humidity">xx</span>%</p>
+            </div>
+
+            <picture class="hero-image">
+                <source media="(max-width: 600px)" srcset="/images/herosmall.jpg">
+                <source media="(max-width: 1000px)" srcset="/images/heromedium.jpg">
+                <source media="(max-width: 1600px)" srcset="/images/herolarge.jpg">
+                <img src="images/hero-image.jpg" alt="hero-image">
+            </picture>
+        </div>
+
+        <section class="company-ads">
+            <div class="co1">
+                <h5>Angel's Ice Cream</h5>
+                <img src="images/angels.jpg" alt="weather-logo">
+                <p>"The best shaved ice on the island"</p>
+            </div>
+
+            <div class="co2">
+                <h5>Seven Brothers</h5>
+                <img src="images/sevenbro.jpg" alt="weather-logo">
+                <p>"We pride ourselves on FRESH, QUALITY ingredients. NEVER frozen, antibiotic-free, Vegetarian fed ground beef,  organic greens, hand-cut potatoes, and hand-scooped 100% real icecream."</p>
+            </div>
+
+            <div class="co3">
+                <h5>Northshore Candle Company</h5>
+                <img src="images/northshorecandle.jpg" alt="weather-logo">
+                <p>"At North Shore Candle Company our soy candles are always dye-free and poured by hand. Our long-lasting candle scents are made from phthalate-free fragrance and essential oils extracted from plants. We use wax and cotton wicks that are sustainable and made in the USA."</p>
+            </div>
+    </section>
+
+
+ 
+
+        
+
+        <div class="chamber-description">
+            <h2>Laie Chamber of Commerce Purpose</h2>
+            <p>Founded in 1985, the Laie Chamber of Commerce is a non-profit working full time to make the North Shore a better place to live, work, and play.</p>
+        </div>
+        <div class="chamber-goals">
+            <h2>Laie Chamber of Commerce Goals</h2>
+            <p>Our mission is to promote, maintain, and encourage the historic, cultural, civic, and economic welfare of the North Shore community through research, education, advocacy, and related activities.</p>
+            
+        </div>
+
+        <button class="cta" onclick="window.location.href='join.html'">Join Today!</button>
+
+        <h2>Three Day Forecast</h2>
+
+        <section id="forecastyo" class="threeday">
+            
+        </section>
+
+
+        <h2>Upcoming Events</h2>
+        <section class="upcoming-events">
+            
+            <div class="event1">
+                <h5>July 14, 2021</h5>
+                <p>Laie Days</p>
+                <p>4:00pm - 9:00pm</p>
+                
+            </div>
+
+            <div class="event2">
+                <h5>July 20, 2021</h5>
+                <p>Aloha Freedom Festival</p>
+                <p>2:00pm - 4:00pm</p>
+                
+            </div>
+
+            <div class="event3">
+                <h5>July 23, 2021</h5>
+                <p>Carrer Fair - BYUH</p>
+                <p>1:00pm - 3:00pm</p>
+               
+            </div>
+
+
+            <div class="event4">
+                <h5>July 23, 2021</h5>
+                <p>Storytime Friday</p>
+                <p>10:00am - 11:00am</p>
+                
+            </div>
+
+            <div class="event5">
+                <h5>July 24, 2021</h5>
+                <p>Volunteer Workday</p>
+                <p>7:00pm - 10:00pm</p>
+                
+            </div>
+
+            <div class="event6">
+                <h5>July 25, 2021</h5>
+                <p>People's Open Market</p>
+                <p>4:00pm - 9:00pm</p>
+                
+            </div>
+        </section>
+
+
+        <h2>Contact Us!</h2>
+        <div class="contact">
+            <p>66-434 B Kamehameha Hwy. Haleiwa, HI 96712</p>
+            <p>Phone: (808) 637-4558</p>
+            <p>Email: info@gonorthshore.org</p>
+            <a href="https://www.facebook.com/Laie-Community-Association-142384322501024/"><img src="images/facebook.png" alt="social-logo"></a>
+            <a href="https://www.instagram.com/laievoice/?hl=en"><img src="images/instagram.jpg" alt="social-logo"></a>
+        </div>
+
+        
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>© <span id="copyright-year">2021</span> | Christine Helfrich | <a href="https://www.byui.edu/online">BYUI Online Learning </a> </p>
+        <p>Last Modified <span id="last-modified">04/23/2021 11:04:24</span> </p>
+    
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+    </body>
+    </html>
