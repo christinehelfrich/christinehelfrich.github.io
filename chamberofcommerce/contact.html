@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Page">
+    <meta name="author" content="Christine Helfrich">
+    <title>Laie Chamber of Commerce</title>
+
+
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/wide.css" rel="stylesheet">
+
+
+</head>
+<body>
+    
+        <header>
+
+            <picture class="logo">
+                <source media="(max-width: 400px)" srcset="images/logo.jpg">
+                <source media="(max-width: 1000px)" srcset="images/logo.jpg">
+                <source media="(max-width: 1600px)" srcset="images/logo.jpg">
+                <img src="images/logo.jpg" alt="logo">
+            </picture>
+        
+            <h1>Laie Chamber of Commerce</h1>
+            <h2>Header 2</h2>
+       
+        </header>
+
+        
+        <nav id="hamnav">
+            <!-- [THE HAMBURGER] -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+           
+            <!-- [MENU ITEMS] -->
+            <ul id="hamitems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city.html">City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+    
+    <main>
+        <h2>Contact Us!</h2>
+
+        <div class="contactinfo">
+        <p>66-434 B Kamehameha Hwy. Haleiwa, HI 96712</p>
+        <p>Phone: (808) 637-4558</p>
+        <p>Email: info@gonorthshore.org</p>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14834.037045810383!2d-157.9299741661278!3d21.64403826956673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c004542e04293fb%3A0xf8edf93e0b8b5b3!2sLaie%2C%20HI%2096762!5e0!3m2!1sen!2sus!4v1626766832171!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+    <div class="contactform">
+
+        <h2>Say Hi!</h2>
+
+        <form class="contactform" name="myForm" onsubmit = "return(validate());">
+
+        <label for="fname">Name</label> 
+        <input type="text" id="fname" name="fname" required minlength="1" maxlength="20" size="30">
+
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required
+        minlength="4" maxlength="80" size="30" placeholder="john@gmail.com">
+
+        <label for="comments">Message</label>
+        <input type="text" id="comments" name="comments"
+        minlength="1" maxlength="500" size="40">
+
+  
+            <input type="submit" id="submit" class="cta" name="submit" size="40">
+        
+        </form>
+
+
+    </div>
+
+    <h2>Board of Directors</h2>
+
+
+
+        <section id="board" class="upcoming-events">
+            
+            <div class="event1">
+          
+                <img src="images/elliott.jpg" alt="board-photo">
+                <p>Elliott Mills</p>
+                
+            </div>
+
+            <div class="event2">
+                <img src="images/duke.jpg" alt="board-photo">
+                <p>Duke Ah Moon</p>
+                
+            </div>
+
+            <div class="event3">
+                <img src="images/marc.jpg" alt="board-photo">
+                <p>Marc Bromley</p>
+               
+            </div>
+
+
+            <div class="event4">
+                <img src="images/tom.jpg" alt="board-photo">
+                <p>Tom Calame</p>
+            </div>
+
+            <div class="event5">
+                <img src="images/catherine.jpg" alt="board-photo">
+                <p>Catherine Cambra</p>
+                
+            </div>
+
+            <div class="event6">
+                <img src="images/dale.jpg" alt="board-photo">
+                <p>Dale Carstensen</p>
+                
+                
+            </div>
+
+         
+        </section>
+
+
+
+ 
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>© <span id="copyright-year">2021</span> | Christine Helfrich | <a href="https://www.byui.edu/online">BYUI Online Learning </a> </p>
+        <p>Last Modified: <span id="last-modified">04/23/2021 11:04:24</span> </p>
+    
+    </footer>
+    <script src="js/script.js"></script>
+    <script >
+ 
+        // Form validation code will come here.
+        function validate() {
+        
+           if( document.myForm.fname.value == "" ) {
+              alert( "Please provide your name!" );
+              document.myForm.Name.focus() ;
+              return false;
+           }
+           if( document.myForm.lname.value == "" ) {
+              alert( "Please provide your last name!" );
+              document.myForm.EMail.focus() ;
+              return false;
+           }
+
+           if( document.myForm.bname.value == "" ) {
+              alert( "Please provide your business name!" );
+              return false;
+           }
+           window.location.href="thanks.html";
+        }
+
+  </script>
+    </body>
+    </html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Page">
+    <meta name="author" content="Christine Helfrich">
+    <title>Laie Chamber of Commerce</title>
+
+
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/wide.css" rel="stylesheet">
+
+
+</head>
+<body>
+    
+        <header>
+
+            <picture class="logo">
+                <source media="(max-width: 400px)" srcset="images/logo.jpg">
+                <source media="(max-width: 1000px)" srcset="images/logo.jpg">
+                <source media="(max-width: 1600px)" srcset="images/logo.jpg">
+                <img src="images/logo.jpg" alt="logo">
+            </picture>
+        
+            <h1>Laie Chamber of Commerce</h1>
+            <h2>Header 2</h2>
+        
+        </header>
+
+        
+        <nav id="hamnav">
+            <!-- [THE HAMBURGER] -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+           
+            <!-- [MENU ITEMS] -->
+            <ul id="hamitems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city.html">City</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        
+        
+    <main>
+
+        <div class="why-join">
+            <h2>Why Should I Join?</h2>
+            <p>The North Shore is the premier recreation area and resting-place for all of Oahu. Haleiwa Town is the heart of the North Shore and home to over 30 historic structures and many small businesses. The Chamber’s primary objective is to preserve this island’s last, historic, country town and district. We need your support to accomplish this mission. The loss of Haleiwa and the North Shore as a country town and area is a loss for all Oahu, not just those who live on the North Shore.
+
+                We hope you will join us in our ongoing mission to promote, maintain, and encourage the historic, cultural, civic, and economic welfare of the North Shore.</p>
+        </div>
+
+        <h2 class="application">Application Form:</h2>
+
+        <form class="application-form" name="myForm" onsubmit = "return(validate());">
+
+            <label for="fname">First Name *Required</label> 
+            <input type="text" id="fname" name="fname" required minlength="5" maxlength="20" size="30">
+ 
+            <label for="lname">Last Name *Required</label> 
+            <input type="text" id="lname" name="lname" required minlength="5" maxlength="20" size="30">
+ 
+            <label for="title">Title</label> 
+            <input type="text" id="title" name="title" minlength="1" maxlength="5" size="5">
+ 
+            <label for="email">Email *Required</label>
+            <input type="email" id="email" name="email" required
+            minlength="4" maxlength="80" size="30" placeholder="john@gmail.com">
+ 
+            <label for="phone">Cell Phone Number</label>
+            <input type="tel" id="phone" name="phone"
+            minlength="6" maxlength="9" size="10"  placeholder="###-###-####">
+
+            <label for="bname">Business Name *Required</label> 
+            <input type="text" id="bname" name="bname" required minlength="5" maxlength="40" size="30">
+
+            <label for="address">Business Address</label> 
+            <input type="text" id="address" name="address" minlength="5" maxlength="40" size="40">
+ 
+            <label for="city">City</label> 
+            <input type="text" id="city" name="city" minlength="5" maxlength="10" size="10">
+ 
+            <label for="state">State</label> 
+            <input type="text" id="state" name="state" minlength="1" maxlength="2" size="2">
+            
+            <label for="zip">Zip Code</label>
+            <input type="number" id="zip" name="zip" >
+ 
+
+            <label for="homepage">Add your Business Website url:</label>
+            <input type="url" id="homepage" name="homepage">
+
+            <label for="comments">Business Description</label>
+            <input type="text" id="comments" name="comments"
+            minlength="1" maxlength="500" size="50">
+
+            <label>
+                <select name="browsers" id="selectbrowser" onchange="selectResponse()">
+                    <option value="" disabled selected>Select a Mambership Level ...</option>
+                    <option value="Preston">Non-profit ($100)</option>
+                    <option value="Soda Springs">Bronze ($200)</option>
+                    <option value="Fish Haven">Silver ($400)</option>
+                    <option value="Fish Haven">Gold ($1000)</option>
+                </select></label>
+
+
+                    <input type="submit" onClick="validateForm()" id="submit" class="cta" name="submit" size="40">
+          
+
+
+
+</form>
+    </main>
+    <footer>
+        <p>© <span id="copyright-year">2021</span> | Christine Helfrich | <a href="https://www.byui.edu/online">BYUI Online Learning </a> </p>
+        <p>Last Modified <span id="last-modified">04/23/2021 11:04:24</span> </p>
+    
+    </footer>
+    <script src="js/script.js"></script>
+    <script >
+ 
+           // Form validation code will come here.
+           function validate() {
+           
+              if( document.myForm.fname.value == "" ) {
+                 alert( "Please provide your name!" );
+                 document.myForm.Name.focus() ;
+                 return false;
+              }
+              if( document.myForm.lname.value == "" ) {
+                 alert( "Please provide your last name!" );
+                 document.myForm.EMail.focus() ;
+                 return false;
+              }
+
+              if( document.myForm.bname.value == "" ) {
+                 alert( "Please provide your business name!" );
+                 return false;
+              }
+              window.location.href="thanks.html";
+           }
+  
+     </script>
+    </body>
+    </html>
