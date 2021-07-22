@@ -1,0 +1,46 @@
+{   
+    "business":[
+        {
+            "Name": "Seven Brothers",
+            "phone": "(808) 744-6440",
+            "logo": "images/sevenbro.png",
+            "link": "http://www.sevenbrothersburgers.com/"
+        },
+        {
+            "Name": "North Shore Candle Company, LLC",
+            "phone": "(808) 779-5847",
+            "logo": "images/northshorecandle.png",
+            "link": "https://northshorecandlecompany.com/"
+        },
+        {
+            "Name": "Raynor Surfboards",
+            "phone": "(808) 253-9020",
+            "logo": "images/raynor.jpg",
+            "link": "https://www.raynorshop.com/"
+        },
+        {
+            "Name": "Active Oahu Tours",
+            "phone": "(808) 498-1894",
+            "logo": "images/activeoahu.jpg",
+            "link": "https://activeoahutours.com/"
+        },
+        {
+            "Name": "Tahitian Treasures",
+            "phone": "(808) 429-3875",
+            "logo": "images/tahitian.png",
+            "link": "https://www.tahitiantreasures.org/"
+        },
+        {
+            "Name": "Polynesian Cultural Center",
+            "phone": " (800) 367-7060",
+            "logo": "images/pcc.png",
+            "link": "https://www.polynesia.com/"
+        },
+        {
+            "Name": "Pounders Restaurant",
+            "phone": "(808) 293-8616",
+            "logo": "images/pounders.png",
+            "link": "poundersrestaurant.com"
+        }
+    ]
+}  
