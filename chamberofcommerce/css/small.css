@@ -1,0 +1,457 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Open+Sans&display=swap');
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/* Header */
+header {
+    padding: .5rem 2%;
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 1fr;
+
+}
+header .logo {
+    width: 80px;
+    grid-column: 1;
+    grid-row: 1/4;
+}
+header h1 {margin: 0; grid-column: 2; align-self: end; margin-left: 5px;}
+header h2 {margin: 0; font-weight: normal; grid-column: 2; margin-left: 5px;}
+
+
+
+header img {
+    grid-area: logo;
+    width: 80px;
+    margin: 5px;
+}
+
+
+
+/* Navigation */
+
+
+#hamnav label { 
+  display: inline-block; 
+  color: white;
+  font-style: normal;
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+#hamnav {
+    background: #60935D;
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+/* Break down menu items into vertical */
+#hamitems a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+/* Toggle Show/Hide Menu */
+#hamitems { display: none; }
+#hamnav input:checked ~ #hamitems { 
+    display: block;
+ }
+  
+  
+#hamburger {
+    display: none;
+}
+
+.active {
+    background-color: #bbdfc5;
+    opacity: 0.5;  
+    width: 80px; 
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+}
+
+.active a {
+    color: #ff579f;
+}
+
+
+nav li:hover {
+    
+    background-color: #bbdfc5;
+    width: 80px; 
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+  }
+
+  nav li:hover a {
+    color: #ff579f;
+    
+  }
+
+nav ul {
+    list-style: none;
+    padding: 15px;
+}
+
+
+
+nav ul li a {
+    color: white;
+}
+
+nav {
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #60935D;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* All Main */
+
+body {
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+}
+
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+}
+
+h5 {
+    font-family: 'Comfortaa', cursive;
+
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    margin: 10px;
+}
+
+main h1, h2 {
+    text-align: center;
+    color: #2c423f;
+}
+
+/* City Main */
+
+.city-main img {
+    width: 300px;
+}
+
+.city-main {
+    text-align: center;
+}
+
+.motto {
+    background-color: #bbdfc5;
+    padding: 10px;
+    border-radius: 5px 100px 100px 5px;
+    margin: 5px;
+
+}
+
+.motto img {
+    height: 170px;
+}
+
+.population {
+    background-color: #bab700;
+    padding: 10px;
+    border-radius: 100px 5px 5px 100px;
+    margin: 5px;
+
+}
+
+.location {
+    background-color: #bbdfc5;
+    padding: 10px;
+    border-radius: 5px 100px 100px 5px;
+    margin: 5px;
+
+}
+
+/* Index Main */
+
+.contact img {
+    width: 30px;
+    margin: 5px;
+}
+
+header h2 {
+    text-align: left;
+}
+
+.laie h1 {
+    padding: 10px;
+    color: #2c423f;
+    font-size: 40px;
+    text-align: center;
+}
+
+.city-weather {
+    position: relative;
+}
+
+.city-weather img {
+    width: 100%;
+}
+
+.weather-box {
+    position: absolute;
+    background-color: #bab700;
+    width: 40%;
+    min-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 50px 50px 50px 50px;
+
+}
+
+.chamber-description {
+    background-color: #bbdfc5;
+    padding: 10px;
+    border-radius: 5px 50px 50px 5px;
+    margin: 5px;
+
+}
+
+.chamber-goals {
+    background-color: #bab700;
+    padding: 10px;
+    border-radius: 50px 5px 5px 50px;
+    margin: 5px;
+
+}
+
+.cta {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    margin-left: 44%;
+    background-color: #ff579f;
+    border-radius: 40px 40px 40px 40px;
+    
+}
+
+.company-ads {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+}
+
+.company-ads div {
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px 5px 30px 30px;
+}
+
+.co1 {
+    background-color: #bab700;
+}
+
+.co2 {
+    background-color: #bbdfc5;
+}
+
+.co3 {
+    background-color: #ff579f;
+}
+
+.company-ads img {
+    width: 100px;
+}
+
+.company-ads div h5 {
+    background-color: #60935d;
+    padding: 5px;
+}
+
+
+
+.threeday {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 3px;
+}
+
+.threeday div {
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px 5px 30px 30px;
+    background-color: #60935d;
+}
+
+
+.company-ads img {
+    width: 100px;
+}
+
+.threeday div h5 {
+    border: 3px solid #bbdfc5;
+    border-radius: 40px 40px 40px 40px;
+    padding: 5px;
+}
+
+.upcoming-events {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 10px;
+}
+
+.upcoming-events div {
+    background-color: #bbdfc5;
+    padding: 5px;
+    border: 1px solid #60935d;
+    border-radius: 0px 40px 40px 40px;
+}
+
+.upcoming-events h5 {
+    color: #ff579f;
+    padding: 5px;
+    border-radius: 40px 40px 40px 40px;
+
+    margin-top: 0px;
+}
+
+.upcoming-events p {
+    display: block;
+    padding: 5px;
+}
+
+
+
+.contact {
+    text-align: center;
+}
+/* Join Main */
+
+label {
+    display: block;
+    margin: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.application {
+    background-color: #bab700;
+    padding: 15px;
+    border-radius: 50px 50px 5px 5px ;
+    margin: 5px;
+}
+
+form {
+    background-color: #bbdfc5;
+    padding: 15px;
+    border-radius: 5px 5px 50px 50px;
+    margin: 5px;
+}
+
+.why-join {
+    background-color: #60935D;
+    padding: 15px;
+    border-radius: 5px 5px 50px 50px;
+    margin: 5px;
+}
+
+.why-join h2 {
+    color: white;
+    font-size: 35px;
+}
+
+/* Contact Main */
+
+.contactinfo {
+    background-color: #bbdfc5;
+    padding: 15px;
+    border-radius: 5px 50px 50px 50px;
+    margin: 5px;
+    text-align: center;
+}
+
+.contactform {
+    background-color: #bab700;
+    padding: 15px;
+    border-radius: 50px 5px 50px 50px;
+    margin: 5px;
+    text-align: center;
+}
+
+.contactform input {
+    margin-bottom: 5px;
+}
+
+#board img {
+    max-width: 100px;
+    margin: 10px;
+}
+
+#board div {
+    text-align: center;
+}
+
+iframe {
+    width: 94%;
+    height: 200px;
+    margin: 20px;
+
+}
+
+#submit {
+    margin: 0 auto;
+    display: block;
+    
+}
+
+/* Directory Main */
+
+
+
+#theBiz img {
+    width: 100px;
+}
+
+#theBiz {
+    text-align: center;
+    border: 2px solid #bbdfc5;
+    margin: 20px;
+    padding: 5px;
+    
+}
+
+#theBiz h5 {
+    background-color: #bab700;
+    padding: 5px;
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    color: #60935D;
+}
